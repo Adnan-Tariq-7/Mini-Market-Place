@@ -1,0 +1,19 @@
+
+echo "Running lint-steged on staged files..."
+
+pnpm run lint:frontend
+
+echo "Linting complete. Proceeding with commit."
+
+# echo "Running lint-steged on staged files... backend"
+
+# pnpm run lint:backend
+
+# echo "Linting complete. Proceeding with commit."
+
+
+echo "Checking types..."
+
+pnpm run typecheck:frontend
+
+echo "Proceeding with commit."s

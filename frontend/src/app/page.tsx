@@ -1,6 +1,6 @@
-import { Box, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 export default function Home() {
-  let a = "aadf";
-  console.log(a);
-  return <Typography variant="h1">Adnan</Typography>;
+  console.log("test");
+
+  return <Typography variant="h1">Home</Typography>;
 }

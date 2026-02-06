@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "husky": "^9.1.7"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "lint:frontend": "npm --prefix frontend run lint:staged",
+    "lint:backend": "npx --prefix backend run lint-staged",
+    "lint:staged": "npm run lint:frontend && npm run lint:backend",
+    "typecheck:frontend": "npm --prefix frontend run typecheck",
+    "typecheck:backend": "npm --prefix backend run typecheck",
+    "typecheck": "npm run typecheck:frontend && npm run typecheck:backend"
+  }
+}
